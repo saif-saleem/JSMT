@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+    <header>
+      <input type="checkbox" id="ch" >
+      <label for="ch" id="l3">
+        <!-- <i class="fas fa-bars" id="btnn"></i> -->
+        <i class="fas fa-bars" id="btn2"></i>
+      </label>
+       <div class="head_contain">
+        <div style="display: flex; justify-content: space-between; align-items: center; width: 90%; margin: auto;" >
+        <a class="navbar-brand" href="#"><img src="./Cookpal 1.svg" alt="" style="height:44px"></a>
+        <div><img src="./Ellipse 2.png" alt="" srcset="" style="height:33px"></div>
+      </div>
+        <ul class="navbar-nav2">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" style="color:rgba(80, 158, 47, 1);">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Explore <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Help <span class="sr-only">(current)</span></a>
+          </li>
+        </div>
+      
+
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#"><img src="./Cookpal 1.svg" alt="" style="height:44px"></a>
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#" style="color:rgba(80, 158, 47, 1);">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Explore <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Help <span class="sr-only">(current)</span></a>
+                </li>
+            
+                <li><div><img src="./Ellipse 2.png" alt="" srcset="" style="height:33px"></div></li>
+              </ul>
+
+              <!-- <div><img src="./Ellipse 2.png" alt="" srcset=""></div> -->
+
+          </nav>
+    </header>
+
+    <section style="    height: 100px;
+    width: 90%;
+    margin: auto;">
+      <div class="main-body">
+
+        <div class="container_1">
+          <div  style="    width: 50%;
+          display: flex;
+          height: 384px;
+          flex-direction: column;
+          justify-content: center;
+          position: relative;
+          left: 90px;">
+          <span>
+            <p style="
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 30px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: rgba(220, 88, 42, 1);
+
+            ">Trending now</p>
+          </span>
+
+          <span>
+          <p style="
+          font-size: 40px;
+          font-weight: 700;
+          line-height: 51px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: rgba(255, 255, 255, 1);"
+          >Mike's famous salad <br>
+          with cheese</p>
+        </span>
+          <span>
+            <p style="
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 25px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: rgba(255, 255, 255, 1);">By John Mike</p>
+          </span>
+        </div>
+
+        </div>
+
+<div class="container_2">
+  <div style="width: 100%;">
+  <p style="font-weight: 600; size: 22px;">Search For Recipes</p>
+  <input type="text" id="search_bar"  placeholder="Search for Recipes"> 
+  <button id="search_btn" onclick="searchData()"> <img src="./Search-btn.svg" alt="" style="height: 100%; " ></button>
+</div>
+
+</div>
+
+<div class="container_3">
+  <button id="allrecp" onclick="filter_all()">All Recipes</button>
+  <button id="vegrecp" onclick="filter_veg()">Veg Recipes Only</button>
+  <button id="nonvegrecp" onclick="filter_nonveg()">Non Veg Recipes</button>
+</div>
+
+
+<div class="container_4">
+  <div id="filter_div">
+    <span id="sp1" style="color: rgba(37, 37, 37, 1);
+    font-weight: 600; margin-bottom: 20px;">Filters</span>
+    <span style="color: rgba(37, 37, 37, 1); font-weight: 500;
+    margin-bottom: 15px; ">Rating</span>
+
+
+<div id="rad1">
+    <div>
+      <input type="radio" id="r1" name="btn" value="above 4" />
+      <label for="r1">4 and Above</label>
+    </div>
+  
+    <div>
+      <input type="radio" id="r2" name="btn" value="below 4" />
+      <label for="r2">Below 4</label>
+    </div>
+  </div>
+
+  </div>
+
+
+
+
+
+
+
+  <!-- <div style="display: flex; flex-direction: column;">
+    <div id="food-cards">
+
+    </div>
+  </div> -->
+
+  <div class="card_container">
+  
+  </div>
+
+
+</div>
+
+      </div>
+
+
+      <footer>
+
+        <div class="container_5">
+  
+          <div class="f1">
+            <div>
+            <img src="./Cookpal 1.svg" alt="" style="height: 50px;">
+            <p style="margin-top: 25px; size: 16px; color: rgba(37, 61, 78, 1);
+            ">Cookpal is a recipe website with a wide variety of delicious recipes, easy-to-use search function. Join our community and let's cook together!</p>
+            </div>
+          </div>
+        
+
+        <div class="f2">
+          <p style="color: rgba(37, 61, 78, 1);
+          font-weight: 650; size: 26px;
+          ">Company</p>
+          <span style="margin-bottom: 13px; color: rgba(0, 0, 0, 0.6);
+          ">Home</span>
+          <span style="margin-bottom: 13px;color: rgba(0, 0, 0, 0.6);">Explore</span>
+          <span style="margin-bottom: 13px;color: rgba(0, 0, 0, 0.6);">Team</span>
+          <span style="margin-bottom: 13px;color: rgba(0, 0, 0, 0.6);">About us</span>
+          <span style="margin-bottom: 13px;color: rgba(0, 0, 0, 0.6);">Activity</span>
+          <span style="margin-bottom: 13px;color: rgba(0, 0, 0, 0.6);">Company</span>
+        </div>
+
+        <div class="f3">
+          <p style="color: rgba(37, 61, 78, 1);
+          font-weight: 650; size: 26px;
+          ">Resources</p>
+          <span style="margin-bottom: 13px;color: rgba(0, 0, 0, 0.6);">Blog</span>
+          <span style="margin-bottom: 13px;color: rgba(0, 0, 0, 0.6);">Use Cases</span>
+          <span style="margin-bottom: 13px;color: rgba(0, 0, 0, 0.6);"  >Testimonila</span>
+          <span  style="color: rgba(0, 0, 0, 0.6);">Insights</span>
+        </div>
+  
+        <div class="f4">
+          <img src="./Cookpal 1.svg" alt="" style="height: 50px;">
+          <p style="color: rgba(0, 0, 0, 0.6);
+          ">Ut risus mattis interdum faucibus facilisi. Facilisi purus <br> accumsan aliquam.</p>
+          <div>
+            <label for="" style="    border: 1px solid;
+            width: 67%;">
+            <input type="text" placeholder="Your Email" id="l1" >
+            <i class="fa-solid fa-at" style="    position: relative;
+            right: -35px;"></i>
+          </label>
+          <button style="    height: 26px;
+          border: none;
+          width: 90px;
+          background-color: green;
+          color: white;
+      ">Subscribe</button>
+
+        </div>
+
+
+        </div>
+        
+
+      </div>
+
+        <div class="container_6">
+        
+          <span style="margin-right: 20px;"><i class="fa-brands fa-square-instagram" style="font-size: 30px;"></i></span>
+          <span style="margin-right: 20px; margin-left: 20px;"><i class="fa-brands fa-square-twitter" style="font-size: 30px;"></i></span>
+          <span style="margin-right: 20px; margin-left: 20px;"><i class="fa-brands fa-linkedin" style="font-size: 30px;"></i></span>
+          <span style="margin-right: 20px; margin-left: 20px;"><i class="fa-brands fa-facebook" style="font-size: 30px;"></i></span>
+
+        </div>
+     
+      </footer>
+    </section>
+
+    
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

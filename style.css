@@ -1,0 +1,408 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.navbar{
+    padding-left: 100px !important;
+    justify-content: space-between !important;
+    padding-right: 100px !important;
+}
+
+.navbar-nav{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_1{
+background-image:url('im3.png') ;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.container_2{
+margin-top: 20px;
+}
+
+#search_bar{
+    height: 40px;
+    border: none;
+    background-color: rgba(243, 243, 243, 1);
+    width: 96%;
+
+}
+#search_btn{
+    height: 40px;
+    border: none;
+    position: absolute;
+}
+
+.container_3{
+margin-top: 20px;
+width: 100%;
+}
+
+#allrecp{
+    width: 15%;
+    height: 60px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(234, 170, 0, 1);
+    color: white;
+
+}
+#vegrecp{
+    width: 15%;
+    height: 60px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(196, 214, 0, 1);
+    color: white;
+
+}
+#nonvegrecp{
+    width: 15%;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    background-color:rgba(220, 88, 42, 1);
+    color: white
+    
+}
+
+.container_4{
+    margin-top: 40px;
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+#filter_div{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+    footer{
+        margin-top: 100px;
+}
+
+.container_5{
+    display: flex;
+    padding-left: 30px;
+    justify-content: space-between;
+    
+}
+
+.f1{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.f3{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+.f2{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+
+.container_6{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    height: 100px;
+}
+
+
+
+
+.card_container{
+    padding-left: 35px;
+
+    gap: 2rem;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.div1{
+    border-radius: 10px;
+}
+
+.card {
+   padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 20px !important;
+    height: 400px;
+    padding: 5px;
+    /* display: inline-block;
+    vertical-align: top; */
+}
+
+.card img {
+    max-width: 100%;
+    height: 65%;
+    border-radius: 20px;
+}
+
+.type{
+    color: rgba(161, 161, 161, 1);
+    margin-top: 10px;
+    
+}
+
+.name{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.5rem !important;
+}
+
+.time{
+    color: rgba(220, 88, 42, 1);
+    font-weight: 600;
+    font-size: 1.5rem !important;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.rt{
+    width: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.like{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lc{
+    display: flex;
+    width: 50px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.likebtn{
+border: none;
+background-color: transparent;
+}
+
+#lab1{
+    border: solid 1px #000;
+    border-radius: 2px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    gap: 4px;
+}
+
+#l1{
+    border: none;
+    outline: none;
+  
+}
+
+#btn2{
+    display: none;
+}
+
+.head_contain{
+    display: none;
+    height: 455%;
+    width: 250px;
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    color: aqua;
+}
+
+#ch{
+    display: none;
+}
+
+#l3{
+    display: none;
+}
+
+label #btnn, label #btn2{
+    position: absolute;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 3px;
+}
+
+label #btnn{
+    left:  40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    padding: 6px 12px;
+}
+
+label #btn2{
+z-index: 111;
+left: 195px;
+top: 28px;
+font-size: 30px;
+color: black;
+padding: 4px 9px;
+}
+
+#ch:checked ~ .head_contain{
+    left: 0;
+}
+#ch:checked ~ label #btn2{
+    left: 0px;
+    opacity: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .container_3{
+        width: 100%;
+        align-items: center;
+        /* display: none; */
+        display: flex;
+        justify-content: space-between;
+    }
+    #allrecp{
+        width: 29%;
+        
+    margin-right: 7px !important;
+    }
+    #vegrecp{
+        width: 29%;
+        margin-right: 5px !important;
+    }
+
+    #nonvegrecp{
+        width: 29%;
+        margin-right: 7px !important;
+    }
+
+    .container_4{
+        display: flex;
+        flex-direction: column;
+    }
+    #filter_div{
+        display: flex;
+        /* flex-direction: row; */
+        width: 100%;
+    }
+    #sp1{
+        display: none;
+    }
+
+    #rad1{
+        display: flex;
+        width: 48%;
+        justify-content: space-between
+    }
+
+    .card_container{
+        width: 100%;
+        padding-left: 0px;
+    }
+    .card{
+        width: 120%;
+        height: 90%;
+        
+    }
+    .card>img{
+        height: 40%;
+    }
+
+    .desc{
+        width: 100%;
+    }
+    .rt{
+        display: none;
+    }
+
+    .lc{
+        display: none;
+    }
+    .name{
+       font-size: 20px !important;
+       font-weight: 700;
+       color: rgba(37, 37, 37, 1);
+
+    }
+
+    .container_1{
+        width: 100%;
+    }
+
+
+    .time{
+        font-size: 20px !important;
+    }
+    .f1{
+        width: 100%;
+    }
+
+    .f2{
+        display: none;
+    }
+    .f3{
+        display: none;
+    }
+    .f4{
+        display: none;
+    }
+
+    
+    .main-body{
+        width: 100%;
+    }
+
+.navbar-nav{
+    display: none !important;
+}
+.head_contain{
+    display: block !important;
+}
+ #l3{
+    display: block;
+ }
+
+
+#btn2{
+    display: block !important;
+    position: relative;
+    left: 10px !important;
+}
+ .head_contain{
+    display: block;
+ }
+
+ 
+    
+  }
